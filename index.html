@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name<input id="name" name="name" type="text" placeholder="Enter your name" required></input>
+      </label>
+      <label id="email-label">
+        Email<input id="email" name="email" type="email" placeholder="Enter your email" required>
+      </label>
+      <label id="number-label">
+        Age (optional)<input id="number" min="13" max="120" name="age" type="number" placeholder="Age" </label>
+      <label class="subtitle">
+        Which option best describes your current role?
+        <select id="dropdown">
+          <option value="1">
+            Select current role
+          </option>
+          <option value="2">
+            Student
+          </option>
+          <option value="3">
+            Full time job
+          </option>
+          <option value="4">
+            Full time learner
+          </option>
+          <option value="5">
+            Prefer not to say
+          </option>
+          <option value="6">
+            Other
+          </option>
+        <select>
+      </label>
+      <label class="subtitle">
+        Would you recommend freeCodeCamp to a friend?
+      </label>
+      <label for="recommend" class="inline"><input type="radio" value="30" class="inline" name="recommend">Definitely</label>
+      <label for="recommend" class="inline"><input type="radio" value="31"class="inline" name="recommend">Maybe</label>
+      <label for="recommend" class="inline"><input type="radio" value="32" class="inline" name="recommend">Not sure</label>
+    </form>
+    <label name="favorite-thing" class="subtitle">
+      What is your favorite feature of freeCodeCamp?
+      <select>
+        <option value="7">
+          Select an option
+        </option>
+        <option value="8">
+          Challenges
+        </option>
+        <option value="9">
+          Projects
+        </option>
+        <option value="10">
+          Community
+        </option>
+        <option value="11">
+          Open Source
+        </option>
+      </select>
+    </label>
+    <label name="checkbox" class="subtitle">
+      What would you like to see improved? (Check all that apply)
+    </label>
+      <label for="improved" class="checklist">
+        <input id="improved" class="inline" value="22" name="improved" type="checkbox" required>Front-end Projects
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="21" name="improved" type="checkbox" required>Back-end Projects
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="20" name="improved" type="checkbox" required>Data Visualization
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="19" name="improved" type="checkbox" required>Challenges
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="18" name="improved" type="checkbox" required>Open Source Community
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="17" name="improved" type="checkbox" required>Gitter help rooms
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="16" name="improved" type="checkbox" required>Videos
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="15" name="improved" type="checkbox" required>City Meetups
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="14"name="improved" type="checkbox" required>Wiki
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="13" name="improved" type="checkbox" required>Forum
+      </label>
+      <label class="checklist" for="improved">
+        <input id="improved" class="inline" value="12" name="improved" type="checkbox" required>Additional Courses
+      </label>
+
+      <label name="suggestions" for="comment">
+        Any comments or suggestions?
+        <textarea name="comment" class="comment" rows="8" placeholder="Enter your comment here...">
+        </textarea>
+      </label>
+      <input type="submit" id="submit" >
+  </body>
+  </html>  

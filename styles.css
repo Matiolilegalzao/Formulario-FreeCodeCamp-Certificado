@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&family=Roboto&display=swap');
+body {
+  font-family: montserrat;
+  margin: 0;
+  color: white;
+}
+body::before {
+  top: 0;
+  left: 0;
+  content: "";
+  position: absolute;
+  background-color: rgba(50, 10 ,150, 0.60);
+  width: 100%;
+  height: 100em;
+  z-index: -1;
+}
+#title {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 2.5em;
+}
+#description {
+  text-align: center;
+  font-size: 1.2em
+}
+form {
+  margin: 0 auto;
+  max-width: 500px;
+  width: 60vw;
+  min-width: 300px;
+  background-color: rgba(27, 27, 50, 0.8);
+  color: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+
+label {
+  display: block;
+  margin: 15px 0;
+}
+input {
+  margin-top: 5px;
+  width: 100%;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-top: 3px;
+  color: rgba(130, 130, 130, 1);
+  font-family: montserrat;
+}
+input, select {
+  border-radius: 4px;
+  border: 0;
+  height: 2.7em;
+  font-family: montserrat;
+}
+.inline {
+  width: unset;
+  vertical-align: middle;
+  margin: 0 0.5em 0 0;
+}
+input[type="radio"] {
+  width: 20px;
+}
+input::placeholder {
+  padding-left: 10px;
+}
+select:first-child {
+  padding-left: 10px;
+}
+input[type="checkbox"] {
+  width: 20px;
+}
+.checklist {
+  margin: -3 10 0 0;
+}
+textarea {
+  margin: 10px 0;
+  display: block;
+  width: 100%;
+}
+textarea::placeholder {
+  font-size: 15px;
+  padding: 5px 0 0 5px;
+}
+#submit {
+  background-color: rgb(0, 200, 100);
+  color: white;
+  height: 4em;
+  border-radius: 2px;
+}
+#submit:hover {
+  background-color: rgb(0, 150, 75);
+}
